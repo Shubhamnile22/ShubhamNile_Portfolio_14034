@@ -105,7 +105,7 @@ prevBtn.addEventListener("click", () => {
 });
 
 
-// form 
+//  contact form  
 
 $(document).ready(function() {
     // Show validation message on focus
@@ -165,6 +165,9 @@ $(document).ready(function() {
                 return false;
             }
         }
+// -----
+        field.removeClass('valid').addClass('error'); 
+field.removeClass('error').addClass('valid');
         
         // For input fields
         if (field[0].checkValidity()) {
@@ -189,7 +192,7 @@ $(document).ready(function() {
     }
 });
 
-// Update copyright year
+// copyright year
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // 3D tilt effect for elements with tilt-effect class
