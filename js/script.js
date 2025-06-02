@@ -158,16 +158,18 @@ $(document).ready(function() {
             if (value.length >= 10) {
                 field.removeClass('error').addClass('valid');
                 validationMsg.hide();
+                
                 return true;
             } else {
-                field.removeClass('valid').addClass('error');
+                
                 validationMsg.show();
+                field.removeClass('valid').addClass('error'); 
                 return false;
             }
         }
 // -----
-        field.removeClass('valid').addClass('error'); 
-field.removeClass('error').addClass('valid');
+        
+
         
         // For input fields
         if (field[0].checkValidity()) {
